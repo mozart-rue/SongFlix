@@ -30,11 +30,22 @@ class _HomeBodyState extends State<HomeBody> {
                 ),
               ),
               Stack(
+                alignment: Alignment.bottomCenter,
                 children: [
                   Image.asset(
                     'assets/images/Banner.jpg',
                     height: 138,
                     width: 390,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Assista agora",
+                      style: TextStyle(
+                        fontSize: fsNormal,
+                        color: kTextBody,
+                      ),
+                    ),
                   ),
                 ],
               ),
