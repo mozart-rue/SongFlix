@@ -6,3 +6,4 @@ const Color kTitulo = Color(0xFF2478DF);
 
 // Font Family
 const String fTitulo = "BebasNeue";
+const String fTextBody = "Roboto";
