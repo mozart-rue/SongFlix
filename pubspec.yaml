@@ -91,3 +91,8 @@ flutter:
       fonts:
         - asset: fonts/BebasNeue.otf
           style: normal
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Light.ttf
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 700
