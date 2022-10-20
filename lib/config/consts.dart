@@ -8,3 +8,7 @@ const Color kTextBody = Color(0xFFFFFFFF);
 // Font Family
 const String fTitulo = "BebasNeue";
 const String fTextBody = "Roboto";
+
+// Font Sizes
+const double fsTitleH1 = 32;
+const double fsNormal = 18;
