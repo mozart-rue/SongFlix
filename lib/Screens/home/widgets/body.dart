@@ -16,8 +16,8 @@ class _HomeBodyState extends State<HomeBody> {
       child: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: const [
-              Padding(
+            children: [
+              const Padding(
                 padding: EdgeInsets.all(8),
                 child: Text(
                   "SongFlix",
@@ -28,7 +28,16 @@ class _HomeBodyState extends State<HomeBody> {
                     fontSize: 32,
                   ),
                 ),
-              )
+              ),
+              Stack(
+                children: [
+                  Image.asset(
+                    'assets/images/Banner.jpg',
+                    height: 138,
+                    width: 390,
+                  ),
+                ],
+              ),
             ],
           ),
         ),
