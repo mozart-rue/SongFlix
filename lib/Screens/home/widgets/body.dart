@@ -25,7 +25,7 @@ class _HomeBodyState extends State<HomeBody> {
                     fontFamily: fTitulo,
                     fontWeight: FontWeight.w400,
                     color: kTitulo,
-                    fontSize: 32,
+                    fontSize: fsTitleH1,
                   ),
                 ),
               ),
