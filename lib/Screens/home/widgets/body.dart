@@ -12,6 +12,12 @@ class HomeBody extends StatefulWidget {
 class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
+    List<String> categorias = [
+      "Front End",
+      "Mobile",
+      "Programação",
+      "Data Science"
+    ];
     return Background(
       child: SafeArea(
         child: SingleChildScrollView(
@@ -45,6 +51,41 @@ class _HomeBodyState extends State<HomeBody> {
                         fontSize: fsNormal,
                         color: kTextBody,
                       ),
+                    ),
+                  ),
+                ],
+              ),
+              // ListView.builder(
+              //     scrollDirection: Axis.horizontal,
+              //     shrinkWrap: true,
+              //     itemCount: categorias.length,
+              //     itemBuilder: (context, index) {
+              //       return
+              //       Padding(
+              //         padding: const EdgeInsets.only(top: 28),
+              //         child: RoundedButton(
+              //           width: 116,
+              //           height: 32,
+              //           radius: 12,
+              //           onClick: () => print("clickeit "),
+              //           title: categorias[index],
+              //           fontSize: 16,
+              //           backgroundColor: kTitulo,
+              //         ),
+              //       );
+              //     }),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 28),
+                    child: RoundedButton(
+                      width: 116,
+                      height: 32,
+                      radius: 12,
+                      onClick: () => print("clickeit "),
+                      title: "teste",
+                      fontSize: 16,
+                      backgroundColor: kTitulo,
                     ),
                   ),
                 ],
