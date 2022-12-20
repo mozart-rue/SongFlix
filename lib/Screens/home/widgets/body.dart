@@ -54,10 +54,13 @@ class _HomeBodyState extends State<HomeBody> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     String randomVideoImageUrl = "";
-    if (videos.isNotEmpty) {
+    if (videos.length > 1) {
       Random random = Random();
       int indexRandom = random.nextInt(videos.length);
       randomVideoImageUrl = getImgUrl(videos[indexRandom].urlVideo);
+    }
+    if (videos.length == 1) {
+      randomVideoImageUrl = getImgUrl(videos[0].urlVideo);
     }
     return Scaffold(
       floatingActionButton: FloatingActionButton(
