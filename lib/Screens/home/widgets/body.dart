@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:song_flix/Screens/video_player/video_player_screen.dart';
 import 'package:song_flix/components/index.dart';
 import 'package:song_flix/config/index.dart';
 import 'package:song_flix/models/categories_model.dart';
@@ -77,7 +78,7 @@ class _HomeBodyState extends State<HomeBody> {
         ),
       ),
       body: Background(
-        child: SafeArea(
+        child: Center(
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -170,10 +171,16 @@ class _HomeBodyState extends State<HomeBody> {
                       itemCount: videos.length, 
                       itemBuilder: ((context, index) {
                         return Padding(
-                          padding: const EdgeInsets.only(top: 12),
+                          padding: const EdgeInsets.only(top: 24, bottom: 12),
                           child: VideoItemRecomended(
                             category: videos[index].category,
-                            videoUrl: videos[index].urlVideo,
+                            videoUrl: videos[index].urlVideo, 
+                            videoTitle: videos[index].youtubeData.videoTitle,
+                            onClick: (){
+                              Navigator.of(context).push(
+                                MaterialPageRoute(builder: (context) => VideoPlayerScreen(video: videos[index]),)
+                              );
+                            },
                           ),
                         );
                       }),
