@@ -14,6 +14,7 @@ const String fTextBody = "Roboto";
 // Font Sizes
 const double fsTitleH1 = 32;
 const double fsTextBig = 28;
+const double fsTitleH3 = 22;
 const double fsNormal = 18;
 const double fsText = 16;
 const double fsTextH2 = 14;
